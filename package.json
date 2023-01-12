@@ -1,12 +1,15 @@
 {
   "name": "portfolio",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port 4210 --open",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "dev": "lite-server",
+    "i18n:init": "ngx-translate-extract --input ./src --output ./src/assets/i18n/en.json --key-as-default-value --replace --format json",
+    "i18n:extract": "ngx-translate-extract --input ./src --output ./src/assets/i18n/en.json ./src/assets/i18n/ru.json ./src/assets/i18n/uz.json --clean --format json"
   },
   "private": true,
   "dependencies": {
@@ -18,6 +21,9 @@
     "@angular/platform-browser": "^14.2.0",
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
+    "@ngx-translate/core": "^14.0.0",
+    "@ngx-translate/http-loader": "^7.0.0",
+    "moment": "^2.29.4",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
@@ -26,13 +32,20 @@
     "@angular-devkit/build-angular": "^14.2.7",
     "@angular/cli": "~14.2.7",
     "@angular/compiler-cli": "^14.2.0",
+    "@biesbjerg/ngx-translate-extract": "^7.0.4",
     "@types/jasmine": "~4.0.0",
+    "@types/lodash": "^4.14.191",
+    "autoprefixer": "^10.4.13",
     "jasmine-core": "~4.3.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
+    "lite-server": "^2.6.1",
+    "ngx-translate-extract": "^1.0.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4",
     "typescript": "~4.7.2"
   }
 }
