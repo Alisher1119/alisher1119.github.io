@@ -1,8 +1,20 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {TranslateHttpLoader} from "@ngx-translate/http-loader";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
+import {LanguageService} from "./core/services/language.service";
+import {PagesModule} from "./pages/pages.module";
+import {ComponentsModule} from "./components/components.module";
+import {APP_NAME} from "./core/constants/app.constants";
+import {LANGUAGES} from "./core/constants/language.constant";
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -10,9 +22,26 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    PagesModule,
+    AppRoutingModule,
+    ComponentsModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      },
+      defaultLanguage: 'en',
+      useDefaultLang: true,
+    }),
   ],
-  providers: [],
+  providers: [
+    {provide: LANGUAGES, useValue: LANGUAGES},
+    {provide: APP_NAME, useValue: "Alisher Khayrillaev"},
+    LanguageService,
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

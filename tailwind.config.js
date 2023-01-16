@@ -10,5 +10,8 @@ module.exports = {
 
   darkMode: 'class',
 
-  plugins: [],
+  plugins: [
+    require("./src/assets/plugins/bg-plugin"),
+    require("./src/assets/plugins/rotate-plugin"),
+  ],
 }

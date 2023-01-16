@@ -1,0 +1,11 @@
+<div class="select" clickOutside (clickOut)="show = false">
+  <div class="selected-item uppercase cursor-pointer" (click)="show=!show">
+    {{currentLang.value}}
+    <span class="fe-chevron-down"></span>
+  </div>
+  <ul *ngIf="show" class="dropdown">
+    <li *ngFor="let language of languages" class="dropdown-item cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-800"
+        (click)="changeLanguage(language.value)">{{language.label}}
+    </li>
+  </ul>
+</div>

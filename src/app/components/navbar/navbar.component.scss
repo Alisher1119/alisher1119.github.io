@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 200px;
+
+  &-sticky {
+    position: sticky;
+    top: 0;
+  }
+
+  &__logo {
+    font-size: 48px;
+    text-transform: uppercase;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.menu {
+  &__icon {
+    font-size: 1.5em;
+  }
+}
+
+.theme-toggle, .language-picker {
+  margin-right: 1em;
+}
