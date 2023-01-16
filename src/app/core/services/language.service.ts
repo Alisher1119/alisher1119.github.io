@@ -17,6 +17,8 @@ export class LanguageService {
       this.translateService.use(DEFAULT_LANG);
       moment.locale(DEFAULT_LANG);
     }
+
+    this.getCurrentLang();
   }
 
   /**
@@ -32,8 +34,8 @@ export class LanguageService {
     moment.locale(lang);
   }
 
-  getCurrentLang() {
-    const locale = localStorage.getItem(LANG_KEY);
+  getCurrentLang(): DropdownItemsInterface {
+    const locale = this.translateService.currentLang;
     const currentLang = <DropdownItemsInterface>LANGUAGES.find((language: DropdownItemsInterface) => language.value === locale)
     if (currentLang.id) {
       return currentLang;

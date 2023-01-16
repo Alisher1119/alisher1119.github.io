@@ -4,6 +4,7 @@ import { LanguagePickerComponent } from './language-picker/language-picker.compo
 import { NavbarComponent } from './navbar/navbar.component';
 import { ThemePickerComponent } from './theme-picker/theme-picker.component';
 import {DirectivesModule} from "../directives/directives.module";
+import {TranslateModule} from "@ngx-translate/core";
 
 
 
@@ -18,7 +19,8 @@ import {DirectivesModule} from "../directives/directives.module";
   ],
     imports: [
         CommonModule,
-        DirectivesModule
+        DirectivesModule,
+        TranslateModule
     ]
 })
 export class ComponentsModule { }
