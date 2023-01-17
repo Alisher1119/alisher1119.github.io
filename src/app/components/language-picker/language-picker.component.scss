@@ -1,10 +1,16 @@
 .select {
   position: relative;
-  border: 1px solid;
+  //border: 1px solid;
   border-radius: 6px;
   padding: 4px 6px;
 
   &-item {}
+
+  &:hover {
+    .dropdown {
+      opacity: 1;
+    }
+  }
 }
 
 .dropdown {
@@ -14,6 +20,8 @@
   position: absolute;
   top: 40px;
   left: 0;
+  opacity: 0;
+  transition: opacity 300ms;
 
   &-item {
     padding: 8px 16px;

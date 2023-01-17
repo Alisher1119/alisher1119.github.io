@@ -11,6 +11,7 @@ import {PagesModule} from "./pages/pages.module";
 import {ComponentsModule} from "./components/components.module";
 import {APP_NAME} from "./core/constants/app.constants";
 import {LANGUAGES} from "./core/constants/language.constant";
+import {SIDEBAR_ITEMS} from "./core/constants/sidebar.constants";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -39,6 +40,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   providers: [
     {provide: LANGUAGES, useValue: LANGUAGES},
     {provide: APP_NAME, useValue: "Alisher Khayrillaev"},
+    {provide: SIDEBAR_ITEMS, useValue: SIDEBAR_ITEMS},
     LanguageService,
   ],
   bootstrap: [AppComponent]

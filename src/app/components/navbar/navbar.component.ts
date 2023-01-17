@@ -1,6 +1,5 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {APP_NAME} from "../../core/constants/app.constants";
-import {SidebarService} from "../../core/services/sidebar.service";
 
 @Component({
   selector: 'navbar',
@@ -9,9 +8,9 @@ import {SidebarService} from "../../core/services/sidebar.service";
 })
 export class NavbarComponent implements OnInit {
 
-  sidebarOpen: boolean = false;
+  sidebarOpen: boolean = true;
 
-  constructor(@Inject(APP_NAME) public appName: string, public sidebarService: SidebarService) {
+  constructor(@Inject(APP_NAME) public appName: string) {
   }
 
   ngOnInit(): void {

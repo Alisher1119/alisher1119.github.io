@@ -10,7 +10,6 @@ import {LANGUAGES} from "../../core/constants/language.constant";
 })
 export class LanguagePickerComponent implements OnInit {
 
-  show: boolean = false;
   currentLang: DropdownItemsInterface;
 
   constructor(
@@ -24,7 +23,6 @@ export class LanguagePickerComponent implements OnInit {
 
   changeLanguage(lang: string = 'en') {
     this.languageService.changeLanguage(lang)
-    this.show = false;
     this.currentLang = this.languageService.getCurrentLang();
   }
 }

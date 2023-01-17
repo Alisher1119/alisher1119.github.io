@@ -1,3 +1,12 @@
-<div clickOutside (clickOut)="onClose()" class="sidebar-panel">
-  123
+<div class="sidebar-panel bg-amber-50 dark:bg-neutral-900">
+  <header class="panel-header">
+    <div class="close" (click)="onClose()">
+      <span class="fe-x"></span>
+    </div>
+  </header>
+  <ul class="panel-body">
+    <li *ngFor="let item of items" class="panel-item hover:bg-gray-800">
+      <a [href]="item.link" class="panel-link">{{item.label | translate}}</a>
+    </li>
+  </ul>
 </div>

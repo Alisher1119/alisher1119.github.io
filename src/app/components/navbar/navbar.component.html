@@ -1,21 +1,23 @@
-<header class="header header-sticky">
-  <div class="header__logo">
-    {{appName | translate}}
-  </div>
-  <div class="header__menu">
-    <div class="language-picker">
-      <language-picker></language-picker>
+<div class="navbar">
+  <header class="header header-sticky">
+    <div class="header__logo">
+      {{appName | translate}}
     </div>
-    <div class="theme-toggle">
-      <theme-picker></theme-picker>
-    </div>
-    <div class="menu">
-      <div class="menu__icon" (click)="click()">
-        <span class="fe-menu"></span>
+    <div class="header__menu">
+      <div class="theme-toggle">
+        <theme-picker></theme-picker>
+      </div>
+      <div class="menu">
+        <div class="menu__icon" (click)="sidebarOpen = !sidebarOpen">
+          <span class="fe-menu"></span>
+        </div>
+      </div>
+      <div class="language-picker">
+        <language-picker></language-picker>
       </div>
     </div>
+  </header>
+  <div class="sidebar {{sidebarOpen ? 'open': ''}}">
+    <sidebar [open]="sidebarOpen" (close)="sidebarOpen = false"></sidebar>
   </div>
-  <div class="sidebar {{sidebarOpen ? 'open' : ''}}">
-    <sidebar (close)="sidebarOpen = false" [open]="sidebarOpen"></sidebar>
-  </div>
-</header>
+</div>

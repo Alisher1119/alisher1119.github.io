@@ -1,4 +1,6 @@
-import {Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
+import {Component, EventEmitter, Inject, Input, OnInit, Output} from '@angular/core';
+import {SIDEBAR_ITEMS} from "../../core/constants/sidebar.constants";
+import {SidebarItemsInterface} from "../../core/interfaces/sidebar-Items.interface";
 
 @Component({
   selector: 'sidebar',
@@ -11,14 +13,13 @@ export class SidebarComponent implements OnInit {
 
   @Output() close: EventEmitter<void> = new EventEmitter<void>();
 
-  constructor() { }
+  constructor(@Inject(SIDEBAR_ITEMS) public items: SidebarItemsInterface[]) {
+  }
 
   ngOnInit(): void {
   }
 
   onClose() {
-    if (this.open) {
-      this.close.emit();
-    }
+    this.close.emit();
   }
 }
