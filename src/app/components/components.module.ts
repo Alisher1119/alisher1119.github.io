@@ -5,6 +5,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ThemePickerComponent } from './theme-picker/theme-picker.component';
 import {DirectivesModule} from "../directives/directives.module";
 import {TranslateModule} from "@ngx-translate/core";
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 
@@ -12,7 +13,8 @@ import {TranslateModule} from "@ngx-translate/core";
   declarations: [
     LanguagePickerComponent,
     NavbarComponent,
-    ThemePickerComponent
+    ThemePickerComponent,
+    SidebarComponent
   ],
   exports: [
     NavbarComponent

@@ -22,6 +22,7 @@
 }
 
 .menu {
+  cursor: pointer;
   &__icon {
     font-size: 1.5em;
   }
@@ -30,3 +31,31 @@
 .theme-toggle, .language-picker {
   margin-right: 1em;
 }
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 350px;
+  width: 0px;
+  height: 100vh;
+  transition: width 300ms;
+
+  .open {
+    width: 350px;
+
+    &::before {
+      content: ' ';
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      background-color: dimgrey;
+      height: 100vh;
+      width: calc(100% - 350px);
+    }
+  }
+}
+
+

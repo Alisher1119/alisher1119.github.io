@@ -10,9 +10,12 @@
       <theme-picker></theme-picker>
     </div>
     <div class="menu">
-      <div class="menu__icon">
+      <div class="menu__icon" (click)="click()">
         <span class="fe-menu"></span>
       </div>
     </div>
+  </div>
+  <div class="sidebar {{sidebarOpen ? 'open' : ''}}">
+    <sidebar (close)="sidebarOpen = false" [open]="sidebarOpen"></sidebar>
   </div>
 </header>
