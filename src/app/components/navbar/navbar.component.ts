@@ -8,7 +8,7 @@ import {APP_NAME} from "../../core/constants/app.constants";
 })
 export class NavbarComponent implements OnInit {
 
-  sidebarOpen: boolean = true;
+  sidebarOpen: boolean = false;
 
   constructor(@Inject(APP_NAME) public appName: string) {
   }
@@ -18,7 +18,6 @@ export class NavbarComponent implements OnInit {
 
   click() {
     this.sidebarOpen = !this.sidebarOpen;
-    console.log(this.sidebarOpen);
   }
 
 }

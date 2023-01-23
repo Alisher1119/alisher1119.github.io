@@ -1,24 +1,30 @@
 import {SidebarItemsInterface} from "../interfaces/sidebar-Items.interface";
+import {marker as t} from "@biesbjerg/ngx-translate-extract-marker";
 
 export const SIDEBAR_ITEMS: SidebarItemsInterface[] = [
   {
-    label: 'about me',
+    label: t('about me'),
     link: '#about',
+    icon: 'user',
   },
   {
-    label: 'technology stack',
+    label: t('technology stack'),
     link: '#stack',
+    icon: 'layers',
   },
   {
-    label: 'working experience',
+    label: t('working experience'),
     link: '#experience',
+    icon: 'briefcase',
   },
   {
-    label: 'projects',
+    label: t('projects'),
     link: '#projects',
+    icon: 'command',
   },
   {
-    label: 'contacts',
+    label: t('contacts'),
     link: '#contacts',
+    icon: 'link',
   },
 ];

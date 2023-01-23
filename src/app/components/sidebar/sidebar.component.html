@@ -5,8 +5,8 @@
     </div>
   </header>
   <ul class="panel-body">
-    <li *ngFor="let item of items" class="panel-item hover:bg-gray-800">
-      <a [href]="item.link" class="panel-link">{{item.label | translate}}</a>
+    <li *ngFor="let item of items" class="panel-item hover:bg-gray-200 dark:hover:bg-gray-800" (click)="onClose()">
+      <a [href]="item.link" class="panel-link"><i class="fe-{{item.icon}}"></i> {{item.label | translate}}</a>
     </li>
   </ul>
 </div>

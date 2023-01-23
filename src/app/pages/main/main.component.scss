@@ -1,3 +1,26 @@
 .main {
   position: relative;
+  height: 100vh;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+  }
+
+  &::-webkit-scrollbar-button {
+  }
+
+  &::-webkit-scrollbar-track {
+  }
+
+  &::-webkit-scrollbar-track-piece {
+  }
+
+  &::-webkit-scrollbar-thumb {
+  }
+
+  &::-webkit-scrollbar-corner {
+  }
+
+  &::-webkit-resizer {
+  }
 }

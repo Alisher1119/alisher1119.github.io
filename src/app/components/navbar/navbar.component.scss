@@ -1,18 +1,22 @@
 .navbar {
+  box-shadow: 1px 1px 10px -5px #777777;
+  padding: 0 1rem;
+  z-index: 1;
+  max-height: 80px;
+
+  &-sticky {
+    position: sticky;
+    top: 0;
+  }
+
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto 200px;
-
-    &-sticky {
-      position: sticky;
-      top: 0;
-    }
 
     &__logo {
-      flex: 1;
-      font-size: 48px;
+      flex: 2;
+      font-size: 3rem;
       text-transform: uppercase;
     }
 
@@ -57,7 +61,7 @@
         display: block;
         background-color: rgba(0, 0, 0, .5);
         height: 100vh;
-        width: calc(100vw);
+        width: 100vw;
       }
     }
   }

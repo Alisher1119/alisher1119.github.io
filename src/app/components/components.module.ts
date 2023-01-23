@@ -7,6 +7,7 @@ import {DirectivesModule} from "../directives/directives.module";
 import {TranslateModule} from "@ngx-translate/core";
 import { SidebarComponent } from './sidebar/sidebar.component';
 import {RouterLinkWithHref} from "@angular/router";
+import { BannerComponent } from './banner/banner.component';
 
 
 
@@ -15,11 +16,13 @@ import {RouterLinkWithHref} from "@angular/router";
     LanguagePickerComponent,
     NavbarComponent,
     ThemePickerComponent,
-    SidebarComponent
+    SidebarComponent,
+    BannerComponent
   ],
-  exports: [
-    NavbarComponent
-  ],
+    exports: [
+        NavbarComponent,
+        BannerComponent
+    ],
     imports: [
         CommonModule,
         DirectivesModule,
