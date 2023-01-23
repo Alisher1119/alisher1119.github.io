@@ -8,8 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "dev": "lite-server",
-    "i18n:init": "ngx-translate-extract --input ./src --output ./src/assets/i18n/en.json ./src/assets/i18n/ru.json ./src/assets/i18n/uz.json --key-as-default-value --replace --format json",
-    "i18n:extract": "ngx-translate-extract --input ./src --output ./src/assets/i18n/en.json ./src/assets/i18n/ru.json ./src/assets/i18n/uz.json --clean --format json"
+    "i18n:init": "ngx-translate-extract --input ./src --output ./src/assets/i18n/en.json --key-as-default-value --replace --format json",
+    "i18n:extract": "ngx-translate-extract --input ./src --output ./src/assets/i18n/en.json ./src/assets/i18n/ru.json ./src/assets/i18n/uz.json --sort --format json"
   },
   "private": true,
   "dependencies": {
@@ -20,6 +20,7 @@
     "@angular/platform-browser": "^14.2.0",
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
+    "@biesbjerg/ngx-translate-extract-marker": "^1.0.0",
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
     "moment": "^2.29.4",
@@ -33,7 +34,7 @@
     "@angular/cli": "~14.2.7",
     "@angular/compiler-cli": "^14.2.0",
     "@angular/localize": "^14.2.12",
-    "@biesbjerg/ngx-translate-extract": "^7.0.4",
+    "@bartholomej/ngx-translate-extract": "^8.0.2",
     "@types/jasmine": "~4.0.0",
     "@types/lodash": "^4.14.191",
     "autoprefixer": "^10.4.13",

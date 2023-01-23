@@ -4,8 +4,10 @@
     <span class="fe-chevron-down"></span>
   </div>
   <ul class="dropdown">
-    <li *ngFor="let language of languages" class="dropdown-item cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-800"
-        (click)="changeLanguage(language.value)">{{language.label}}
-    </li>
+    <ng-container *ngFor="let language of languages">
+      <li *ngIf="language.value !== currentLang.value" class="dropdown-item cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-800"
+          (click)="changeLanguage(language.value)">{{language.label}}
+      </li>
+    </ng-container>
   </ul>
 </div>
