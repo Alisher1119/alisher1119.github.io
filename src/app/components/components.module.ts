@@ -8,6 +8,9 @@ import {TranslateModule} from "@ngx-translate/core";
 import { SidebarComponent } from './sidebar/sidebar.component';
 import {RouterLinkWithHref} from "@angular/router";
 import { BannerComponent } from './banner/banner.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { MotoComponent } from './moto/moto.component';
+import { InterestComponent } from './interest/interest.component';
 
 
 
@@ -17,7 +20,10 @@ import { BannerComponent } from './banner/banner.component';
     NavbarComponent,
     ThemePickerComponent,
     SidebarComponent,
-    BannerComponent
+    BannerComponent,
+    CarouselComponent,
+    MotoComponent,
+    InterestComponent
   ],
     exports: [
         NavbarComponent,

@@ -1,5 +1,0 @@
-@for $i from 10 through 72 {
-  .font-#{$i} {
-    font-size: #{$i}px !important;
-  }
-}

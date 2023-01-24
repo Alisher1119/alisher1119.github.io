@@ -13,5 +13,6 @@ module.exports = {
   plugins: [
     require("./src/assets/plugins/bg-plugin"),
     require("./src/assets/plugins/rotate-plugin"),
+    require("./src/assets/plugins/font-plugin"),
   ],
 }

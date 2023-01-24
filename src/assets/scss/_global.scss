@@ -1,0 +1,28 @@
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: $light-gray;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-button {
+
+}
+
+::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-track-piece {
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $gray;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-corner {
+}
+
+::-webkit-resizer {
+}

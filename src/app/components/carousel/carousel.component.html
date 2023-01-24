@@ -1,0 +1,19 @@
+<section class="carousel">
+  <div class="carousel-items">
+    <div *ngFor="let item of items; index as i" class="item {{i === activeIndex ? 'active': i < activeIndex ? 'left' : ''}}" [style]="'background-image: url(' + item.src+ ')'">
+    </div>
+  </div>
+  <div class="carousel-indicators">
+    <div *ngFor="let item of items; index as i" class="indicator {{i === activeIndex ? 'active': ''}}" (click)="activateByIndex(i)">
+    </div>
+  </div>
+  <div class="carousel-arrows">
+    <button class="arrow prev hover:bg-amber-50 dark:hover:bg-gray-800" (click)="prev()">
+      <i class="fe-chevron-left"></i>
+    </button>
+    <button class="arrow next hover:bg-amber-50 dark:hover:bg-gray-800" (click)="next()">
+      <i class="fe-chevron-right"></i>
+    </button>
+  </div>
+
+</section>
