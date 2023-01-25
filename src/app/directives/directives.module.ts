@@ -5,7 +5,7 @@ import {ClickOutsideDirective} from './click-outside.directive';
 
 @NgModule({
   declarations: [
-    ClickOutsideDirective
+    ClickOutsideDirective,
   ],
   exports: [ClickOutsideDirective],
   imports: [

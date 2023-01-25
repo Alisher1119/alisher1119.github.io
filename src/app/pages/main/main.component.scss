@@ -12,5 +12,7 @@
     top: $navbar-size;
     overflow-y: auto;
     overflow-x: hidden;
+
+    scroll-behavior: smooth;
   }
 }

@@ -8,6 +8,11 @@ export const SIDEBAR_ITEMS: SidebarItemsInterface[] = [
     icon: 'user',
   },
   {
+    label: t('projects'),
+    link: '#projects',
+    icon: 'command',
+  },
+  {
     label: t('technology stack'),
     link: '#stack',
     icon: 'layers',
@@ -18,9 +23,14 @@ export const SIDEBAR_ITEMS: SidebarItemsInterface[] = [
     icon: 'briefcase',
   },
   {
-    label: t('projects'),
-    link: '#projects',
-    icon: 'command',
+    label: t('education'),
+    link: '#education',
+    icon: 'file-text',
+  },
+  {
+    label: t('certificates'),
+    link: '#certificates',
+    icon: 'award',
   },
   {
     label: t('contacts'),
