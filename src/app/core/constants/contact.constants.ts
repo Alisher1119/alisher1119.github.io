@@ -7,7 +7,7 @@ export const CONTACTS: ContactInterface[] = [
     icon: 'phone'
   },
   {
-    link: 't.me/alisher1119',
+    link: 'https://t.me/alisher1119',
     title: 'Telegram',
     icon: 'send'
   },

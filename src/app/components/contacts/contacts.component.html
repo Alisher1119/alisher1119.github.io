@@ -5,7 +5,7 @@
   <div class="px-5 md:px-14 lg:px-20 xl:px-48 mt-6 font-18">
     <div class="grid md:grid-cols-2 justify-between">
       <div *ngFor="let item of items" class="mb-3">
-        <a [href]="item.link"><i class="fe-{{item.icon}}"></i> {{item.title}}</a>
+        <a [href]="item.link" target="_blank"><i class="fe-{{item.icon}}"></i> {{item.title}}</a>
       </div>
     </div>
   </div>
