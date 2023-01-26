@@ -1,6 +1,6 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {CAROUSEL_ITEMS} from "../../core/constants/banner.constants";
-import {CarouselItemsInterface} from "../../core/interfaces/carousel-Items.interface";
+import {CarouselItemInterface} from "../../core/interfaces/carousel-item.interface";
 
 @Component({
   selector: 'carousel',
@@ -12,7 +12,7 @@ export class CarouselComponent implements OnInit {
 
   activeIndex: number = 0;
 
-  constructor(@Inject(CAROUSEL_ITEMS) public items: CarouselItemsInterface[]) {
+  constructor(@Inject(CAROUSEL_ITEMS) public items: CarouselItemInterface[]) {
   }
 
   ngOnInit(): void {

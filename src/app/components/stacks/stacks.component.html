@@ -1,0 +1,17 @@
+<section class="stacks mt-10 p-3 lg:p-16" id="stack">
+  <div class="sm:mx-12 md:mx-16 lg:mx-32">
+    <p class="text-center font-semibold font-24 md:font-32 lg:font-48 uppercase">{{"technology stack" | translate}}</p>
+  </div>
+  <div class="px-5 md:px-14 lg:px-20 xl:px-48 mt-6 font-20">
+    <div class="flex items-stretch flex-wrap justify-center">
+      <div *ngFor="let item of items" class="stack mx-3 my-3">
+        <a [href]="item?.link">
+          <img [src]="item?.image">
+          <span>
+            {{item?.title}}
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

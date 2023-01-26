@@ -5,6 +5,7 @@ import {NotFoundComponent} from './not-found/not-found.component';
 import {PagesRoutingModule} from "./pages-routing.module";
 import {ComponentsModule} from "../components/components.module";
 import {DirectivesModule} from "../directives/directives.module";
+import {TranslateModule} from "@ngx-translate/core";
 
 
 @NgModule({
@@ -12,12 +13,13 @@ import {DirectivesModule} from "../directives/directives.module";
     MainComponent,
     NotFoundComponent
   ],
-  imports: [
-    CommonModule,
-    PagesRoutingModule,
-    ComponentsModule,
-    DirectivesModule
-  ]
+    imports: [
+        CommonModule,
+        PagesRoutingModule,
+        ComponentsModule,
+        DirectivesModule,
+        TranslateModule
+    ]
 })
 export class PagesModule {
 }

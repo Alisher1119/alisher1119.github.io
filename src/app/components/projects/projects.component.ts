@@ -1,6 +1,6 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {PROJECT_ITEMS} from "../../core/constants/project.constants";
-import {ProjectItemsInterface} from "../../core/interfaces/project-Items.interface";
+import {ProjectItemInterface} from "../../core/interfaces/project-item.interface";
 
 @Component({
   selector: 'projects',
@@ -10,7 +10,7 @@ import {ProjectItemsInterface} from "../../core/interfaces/project-Items.interfa
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor(@Inject(PROJECT_ITEMS) public items: ProjectItemsInterface[]) { }
+  constructor(@Inject(PROJECT_ITEMS) public items: ProjectItemInterface[]) { }
 
   ngOnInit(): void {
   }

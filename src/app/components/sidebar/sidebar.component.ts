@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Inject, Input, OnInit, Output} from '@angular/core';
 import {SIDEBAR_ITEMS} from "../../core/constants/sidebar.constants";
-import {SidebarItemsInterface} from "../../core/interfaces/sidebar-Items.interface";
+import {SidebarItemInterface} from "../../core/interfaces/sidebar-item.interface";
 
 @Component({
   selector: 'sidebar',
@@ -13,7 +13,7 @@ export class SidebarComponent implements OnInit {
 
   @Output() close: EventEmitter<void> = new EventEmitter<void>();
 
-  constructor(@Inject(SIDEBAR_ITEMS) public items: SidebarItemsInterface[]) {
+  constructor(@Inject(SIDEBAR_ITEMS) public items: SidebarItemInterface[]) {
   }
 
   ngOnInit(): void {

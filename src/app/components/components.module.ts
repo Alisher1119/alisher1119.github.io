@@ -12,15 +12,14 @@ import {CarouselComponent} from './carousel/carousel.component';
 import {MotoComponent} from './moto/moto.component';
 import {InterestComponent} from './interest/interest.component';
 import {AboutComponent} from './about/about.component';
-import {StekComponent} from './stek/stek.component';
 import {ProjectsComponent} from './projects/projects.component';
 import {ContactsComponent} from './contacts/contacts.component';
 import {ExperienceComponent} from './experience/experience.component';
 import {EducationComponent} from './education/education.component';
 import {CertificatesComponent} from './certificates/certificates.component';
 import {CoreModule} from "../core/core.module";
-import { ScrollComponent } from './scroll/scroll.component';
-import { ProjectComponent } from './project/project.component';
+import {StacksComponent} from './stacks/stacks.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -34,14 +33,13 @@ import { ProjectComponent } from './project/project.component';
     MotoComponent,
     InterestComponent,
     AboutComponent,
-    StekComponent,
     ProjectsComponent,
     ContactsComponent,
     ExperienceComponent,
     EducationComponent,
     CertificatesComponent,
-    ScrollComponent,
-    ProjectComponent,
+    StacksComponent,
+    NotFoundComponent,
   ],
   exports: [
     NavbarComponent,
@@ -49,11 +47,11 @@ import { ProjectComponent } from './project/project.component';
     AboutComponent,
     ExperienceComponent,
     ProjectsComponent,
-    StekComponent,
     ContactsComponent,
     EducationComponent,
     CertificatesComponent,
-    ScrollComponent
+    StacksComponent,
+    NotFoundComponent
   ],
   imports: [
     CommonModule,

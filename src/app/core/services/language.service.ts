@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 import * as moment from 'moment';
 import {DEFAULT_LANG, LANG_KEY, LANGUAGES} from "../constants/language.constant";
-import {DropdownItemsInterface} from "../interfaces/dropdown-Items.interface";
+import {DropdownItemInterface} from "../interfaces/dropdown-item.interface";
 
 @Injectable()
 export class LanguageService {
@@ -34,9 +34,9 @@ export class LanguageService {
     moment.locale(lang);
   }
 
-  getCurrentLang(): DropdownItemsInterface {
+  getCurrentLang(): DropdownItemInterface {
     const locale = this.translateService.currentLang;
-    const currentLang = <DropdownItemsInterface>LANGUAGES.find((language: DropdownItemsInterface) => language.value === locale)
+    const currentLang = <DropdownItemInterface>LANGUAGES.find((language: DropdownItemInterface) => language.value === locale)
     if (currentLang.id) {
       return currentLang;
     }

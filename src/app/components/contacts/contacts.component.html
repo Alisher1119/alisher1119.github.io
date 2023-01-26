@@ -1,1 +1,13 @@
-<p>contacts works!</p>
+<section class="contacts mt-10 p-5 lg:p-16" id="contacts">
+  <div class="sm:mx-12 md:mx-16 lg:mx-32">
+    <p class="text-center font-semibold font-24 md:font-32 lg:font-48 uppercase">{{"contacts" | translate}}</p>
+  </div>
+  <div class="px-5 md:px-14 lg:px-20 xl:px-48 mt-6 font-18">
+    <div class="grid md:grid-cols-2 justify-between">
+      <div *ngFor="let item of items" class="mb-3">
+        <a [href]="item.link"><i class="fe-{{item.icon}}"></i> {{item.title}}</a>
+      </div>
+    </div>
+  </div>
+</section>
+

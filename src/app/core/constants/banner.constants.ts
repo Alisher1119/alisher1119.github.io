@@ -1,8 +1,8 @@
-import {SidebarItemsInterface} from "../interfaces/sidebar-Items.interface";
+import {SidebarItemInterface} from "../interfaces/sidebar-item.interface";
 import {marker as t} from "@biesbjerg/ngx-translate-extract-marker";
-import {CarouselItemsInterface} from "../interfaces/carousel-Items.interface";
+import {CarouselItemInterface} from "../interfaces/carousel-item.interface";
 
-export const CAROUSEL_ITEMS: CarouselItemsInterface[] = [
+export const CAROUSEL_ITEMS: CarouselItemInterface[] = [
   {
     src: '../../../assets/images/about-1.jpg',
   },

@@ -1,6 +1,6 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {LanguageService} from "../../core/services/language.service";
-import {DropdownItemsInterface} from "../../core/interfaces/dropdown-Items.interface";
+import {DropdownItemInterface} from "../../core/interfaces/dropdown-item.interface";
 import {LANGUAGES} from "../../core/constants/language.constant";
 
 @Component({
@@ -10,11 +10,11 @@ import {LANGUAGES} from "../../core/constants/language.constant";
 })
 export class LanguagePickerComponent implements OnInit {
 
-  currentLang: DropdownItemsInterface;
+  currentLang: DropdownItemInterface;
 
   constructor(
     public languageService: LanguageService,
-    @Inject(LANGUAGES) public languages: DropdownItemsInterface[]) {
+    @Inject(LANGUAGES) public languages: DropdownItemInterface[]) {
     this.currentLang = this.languageService.getCurrentLang();
   }
 

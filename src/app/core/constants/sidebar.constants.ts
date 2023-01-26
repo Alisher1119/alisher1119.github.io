@@ -1,7 +1,7 @@
-import {SidebarItemsInterface} from "../interfaces/sidebar-Items.interface";
+import {SidebarItemInterface} from "../interfaces/sidebar-item.interface";
 import {marker as t} from "@biesbjerg/ngx-translate-extract-marker";
 
-export const SIDEBAR_ITEMS: SidebarItemsInterface[] = [
+export const SIDEBAR_ITEMS: SidebarItemInterface[] = [
   {
     label: t('about me'),
     link: '#about',

@@ -1,1 +1,18 @@
-<p>certificates works!</p>
+<section class="certificates mt-10 p-5 lg:p-16" id="certificates">
+  <div class="sm:mx-12 md:mx-16 lg:mx-32">
+    <p class="text-center font-semibold font-24 md:font-32 lg:font-48 uppercase">{{"certificates" | translate}}</p>
+  </div>
+  <div class="px-5 md:px-14 lg:px-20 xl:px-48 mt-6 font-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div *ngFor="let item of items" class="p-1">
+        <div class="certificate" [style]="'background-image: url(' + item?.src+ ')'">
+            <div class="certificate__text">
+              <div class="title">
+                {{item?.title}}
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

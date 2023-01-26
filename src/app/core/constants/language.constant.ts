@@ -1,8 +1,8 @@
-import {DropdownItemsInterface} from "../interfaces/dropdown-Items.interface";
+import {DropdownItemInterface} from "../interfaces/dropdown-item.interface";
 
 export const LANG_KEY = 'lang';
 export const DEFAULT_LANG = 'en';
-export const LANGUAGES: DropdownItemsInterface[] = [
+export const LANGUAGES: DropdownItemInterface[] = [
   {
     id: '1',
     icon: 'en.png',
