@@ -4,8 +4,8 @@ const plugin = require('tailwindcss/plugin')
 module.exports = plugin(function({ addUtilities, e, theme, variants }) {
   const bgImg = {
     '.bg-dark::before': {
-      width: '100% !important',
-      height: '100% !important',
+      width: '100vw !important',
+      height: '100vh !important',
       borderBottomRightRadius: '0 !important',
     },
     '.moon': {
