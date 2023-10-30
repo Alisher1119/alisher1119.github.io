@@ -2,11 +2,26 @@ import {ExperienceItemInterface} from "../interfaces/experience-item.interface";
 import {marker as t} from "@biesbjerg/ngx-translate-extract-marker";
 export const EXPERIENCE_ITEMS: ExperienceItemInterface[] = [
   {
+    companyName: "Datagaze LLC",
+    site: "https://datagaze.uz",
+    from: '05-01-2023',
+    position: t('Frontend Developer'),
+    projects: ['https://dlp.datagaze-lab.uz'],
+  },
+  {
     companyName: "Nimbus Technologies",
     site: "https://nimbus.uz",
     from: '03-01-2022',
     position: t('Frontend Developer'),
     projects: ['https://www.zarmedpratiksha.uz/', 'https://rolaypalace.uz'],
+  },
+  {
+    companyName: "Updive LLC",
+    site: "https://updive.uz",
+    from: '12-01-2022',
+    to: '05-01-2023',
+    position: t('Frontend Developer'),
+    projects: ['https://cyberkent.uz'],
   },
   {
     companyName: "Webline",

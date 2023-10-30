@@ -2,6 +2,12 @@ import {ProjectItemInterface} from "../interfaces/project-item.interface";
 
 export const PROJECT_ITEMS: ProjectItemInterface[] = [
   {
+    title: "Cyberkent.uz",
+    tags: ['Reactjs', 'HTML', 'CSS', 'JS',],
+    link: 'https://cyberkent.uz',
+    image: 'assets/images/project/project-8.png',
+  },
+  {
     title: "Royal Palace Hotel",
     tags: ['HTML', 'CSS', 'JS', 'jQuery', 'PHP', 'Yii2'],
     link: 'http://royalpalace.uz',

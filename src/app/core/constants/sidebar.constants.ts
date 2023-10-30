@@ -28,6 +28,11 @@ export const SIDEBAR_ITEMS: SidebarItemInterface[] = [
     icon: 'file-text',
   },
   {
+    label: t('languages'),
+    link: '#languages',
+    icon: 'globe',
+  },
+  {
     label: t('certificates'),
     link: '#certificates',
     icon: 'award',

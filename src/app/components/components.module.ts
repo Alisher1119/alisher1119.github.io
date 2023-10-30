@@ -20,6 +20,7 @@ import {CertificatesComponent} from './certificates/certificates.component';
 import {CoreModule} from "../core/core.module";
 import {StacksComponent} from './stacks/stacks.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { LanguageComponent } from './language/language.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     CertificatesComponent,
     StacksComponent,
     NotFoundComponent,
+    LanguageComponent,
   ],
   exports: [
     NavbarComponent,
@@ -51,7 +53,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     EducationComponent,
     CertificatesComponent,
     StacksComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    LanguageComponent
   ],
   imports: [
     CommonModule,
