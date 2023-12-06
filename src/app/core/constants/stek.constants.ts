@@ -7,9 +7,19 @@ export const STACK_ITEMS: StackItemInterface[] = [
     image: 'assets/images/tech/angular.png',
   },
   {
+    title: "RxJs",
+    link: 'https://rxjs.dev/',
+    image: 'assets/images/tech/rxjs.png',
+  },
+  {
     title: "React.js",
     link: 'https://reactjs.org/',
     image: 'assets/images/tech/reactjs.png',
+  },
+  {
+    title: "Redux",
+    link: 'https://redux.js.org/',
+    image: 'assets/images/tech/redux.png',
   },
   {
     title: "Bootstrap",
@@ -30,6 +40,21 @@ export const STACK_ITEMS: StackItemInterface[] = [
     title: "Tailwind CSS",
     link: 'https://tailwindcss.com/',
     image: 'assets/images/tech/tailwind.png',
+  },
+  {
+    title: "Sass",
+    link: 'https://sass-lang.com/',
+    image: 'assets/images/tech/sass.png',
+  },
+  {
+    title: "CSS",
+    link: 'https://www.w3.org/html/',
+    image: 'assets/images/tech/css.png',
+  },
+  {
+    title: "HTML",
+    link: 'https://www.w3.org/html/',
+    image: 'assets/images/tech/html.png',
   },
   {
     title: "jQuery",
@@ -69,16 +94,6 @@ export const STACK_ITEMS: StackItemInterface[] = [
     title: "Laravel",
     link: 'https://laravel.com/',
     image: 'assets/images/tech/laravel.png',
-  },
-  {
-    title: "HTML",
-    link: 'https://www.w3.org/html/',
-    image: 'assets/images/tech/html.png',
-  },
-  {
-    title: "CSS",
-    link: 'https://www.w3.org/html/',
-    image: 'assets/images/tech/css.png',
   },
   {
     title: "MySql",

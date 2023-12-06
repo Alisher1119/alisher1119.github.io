@@ -6,7 +6,7 @@
     <div class="flex items-stretch flex-wrap justify-center">
       <div *ngFor="let item of items" class="stack mx-3 my-3">
         <a [href]="item?.link">
-          <img [src]="item?.image">
+          <img [src]="item?.image" alt="">
           <span>
             {{item?.title}}
           </span>

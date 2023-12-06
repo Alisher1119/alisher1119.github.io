@@ -2,6 +2,18 @@ import {ProjectItemInterface} from "../interfaces/project-item.interface";
 
 export const PROJECT_ITEMS: ProjectItemInterface[] = [
   {
+    title: "Dategaze DLP",
+    tags: ['Angular 8', 'HTML', 'SCSS', 'Ts',],
+    link: 'https://dlp-test.datagaze-lab.uz/',
+    image: 'assets/images/project/project-10.png',
+  },
+  {
+    title: "Updive SIEM",
+    tags: ['Reactjs', 'HTML', 'SCSS', 'Ts',],
+    link: 'https://sector-siem-neon.vercel.app/',
+    image: 'assets/images/project/project-9.png',
+  },
+  {
     title: "Cyberkent.uz",
     tags: ['Reactjs', 'HTML', 'CSS', 'JS',],
     link: 'https://cyberkent.uz',
