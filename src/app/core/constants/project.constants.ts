@@ -41,7 +41,7 @@ export const PROJECT_ITEMS: ProjectItemInterface[] = [
     title: "Nordic International University",
     tags: ['HTML', 'CSS', 'JS', 'jQuery', 'PHP', 'Yii2'],
     link: '#',
-    image: 'assets/images/project/project-11.jpg',
+    image: 'assets/images/project/project-11.png',
   },
   {
     title: "Ikat Art",
