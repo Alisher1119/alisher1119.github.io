@@ -14,6 +14,12 @@ export const PROJECT_ITEMS: ProjectItemInterface[] = [
     image: 'assets/images/project/project-9.png',
   },
   {
+    title: "Report System",
+    tags: ['Angular 13', 'Bootstrap', 'Ts', 'HTML', 'SCSS'],
+    link: '#',
+    image: 'assets/images/project/project-3.jpg',
+  },
+  {
     title: "Cyberkent.uz",
     tags: ['Reactjs', 'HTML', 'CSS', 'JS',],
     link: 'https://cyberkent.uz',
@@ -32,10 +38,10 @@ export const PROJECT_ITEMS: ProjectItemInterface[] = [
     image: 'assets/images/project/project-2.jpg',
   },
   {
-    title: "Report System",
-    tags: ['Angular 13', 'Bootstrap', 'Ts', 'HTML', 'SCSS'],
+    title: "Nordic International University",
+    tags: ['HTML', 'CSS', 'JS', 'jQuery', 'PHP', 'Yii2'],
     link: '#',
-    image: 'assets/images/project/project-3.jpg',
+    image: 'assets/images/project/project-11.jpg',
   },
   {
     title: "Ikat Art",
